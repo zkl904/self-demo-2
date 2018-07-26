@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <!--<Login></Login> &lt;!&ndash;使用Login组件&ndash;&gt;-->
     <router-view/>
   </div>
 </template>
 
 <script>
+import Login from './components/Login' // 引入Login组件
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Login // 注册组件
+  }
 }
 </script>
 
