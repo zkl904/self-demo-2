@@ -19,7 +19,34 @@ const createTodolist = async function (ctx){ // 给某个用户创建一条todol
   }
 }
 
+const removeTodolist = async function (ctx){
+  const id = ctx.params.id;
+  const user_id = ctx.params.userId;
+  const result = await todolist.removeTodolist(id,user_id);
+
+  ctx.body = {
+    success: true
+  }
+}
+
+const updateTodolist = async function (ctx){
+  console.log(ctx.params)
+  const id = ctx.params.id;
+  const user_id = ctx.params.userId;
+  let status = ctx.params.status;
+  status == '0' ? status = true : status =  false;// 状态反转（更新）
+
+  const result = await todolist.updateTodolist(id,user_id,status);
+
+  ctx.body = {
+    success: true
+  }
+}
+
+
 module.exports = {
   getTodolist,
-  createTodolist
+  createTodolist,
+  removeTodolist,
+  updateTodolist
 }

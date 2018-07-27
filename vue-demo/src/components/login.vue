@@ -43,7 +43,7 @@
                 type: 'success',
                 message: '登录成功！'
               });
-              // this.$router.push('/todolist') // 进入todolist页面，登录成功
+              this.$router.push('/todolist') // 进入todolist页面，登录成功
             }else{
               this.$message.error(res.data.info); // 登录失败，显示提示语
               sessionStorage.setItem('demo-token',null); // 将token清空
@@ -57,7 +57,7 @@
   };
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
 	.el-row.content
 		padding 16px
 	.title

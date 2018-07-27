@@ -7,12 +7,9 @@
 </template>
 
 <script>
-import Login from './components/Login' // 引入Login组件
+// import Login from './components/Login' // 引入Login组件
 export default {
-  name: 'App',
-  components: {
-    Login // 注册组件
-  }
+  name: 'App'
 }
 </script>
 
