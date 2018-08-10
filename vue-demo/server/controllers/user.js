@@ -12,8 +12,8 @@ const getUserInfo = async function (ctx) {
 }
 
 const postUserAuth = async function (ctx) {
-  console.log('12345')
-  console.log(ctx.request.body)
+  // console.log('12345')
+  // console.log(ctx.request.body)
   const data = ctx.request.body; // post过来的数据存在request.body里   使用request.body 使用的是post方法
   const userInfo = await user.getUserByName(data.name);  // 获得sql返回的信息
   //

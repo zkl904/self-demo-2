@@ -1,3 +1,4 @@
+import './env.js'
 var Koa = require('koa')
 var koaRouter = require('koa-router')
 var json = require('koa-json')
@@ -66,7 +67,14 @@ app.use(serve(path.resolve('dist'))); // 将webpack打包好的项目目录作�
 // ...省略
 
 
-app.listen(8000)
-
-console.log(`listening on port 8000`)
+// app.listen(8000)
+//
+// console.log(`listening on port 8000`)
 // module.exports = app;
+console.log(process.env.PORT,'xxxxxxxxxxxx')
+let port = process.env.PORT
+console.log(process.env.PORT)
+
+module.exports = app.listen(port, () => {
+  console.log(`Koa is listening in 8000`)
+})
