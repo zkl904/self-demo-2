@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { mount } from 'vue-test-utils'
+import { mount } from 'vue-test-util'
 import Login from '@/components/Login.vue'
 import elementUI from 'element-ui'
 // 这个axios 用的是下面的 mock axios  有点变量提升的味道
