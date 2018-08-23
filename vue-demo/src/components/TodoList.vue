@@ -1,6 +1,9 @@
 <template>
 	<el-row class="content">
 		<el-col :xs="{span:20,offset:2}" :sm="{span:8,offset:8}">
+			<div>
+				<el-button size="small" type="primary" @click="goFile">跳转到上传页面</el-button>
+			</div>
       <span>
         欢迎：{{name}}！你的待办事项是：
       </span>
@@ -175,6 +178,9 @@
             this.$message.error('获取列表失败！')
             console.log(err)
           })
+      },
+      goFile() {
+        this.$router.push('/upfile')
       }
     }
   };

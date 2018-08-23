@@ -17,6 +17,7 @@ const Store = require('./server/store/sessionStore.js');
 const Myconfig = require('./server/config/config')
 
 
+console.log('app.js')
 var app = new Koa()
 app.keys = ['zkl'];
 app.use(session({
@@ -66,21 +67,24 @@ app.on('error', function(err, ctx){
   console.log('server error', err);
 });
 
-//登陆拦截
-app.use(async function(ctx, next) {
-  console.log(ctx.session)
-  console.log(ctx.cookie,'cookie')
-  console.log(ctx.session, 'session')
-  console.log(ctx.cookies.get('koa:sess'),ctx.path, 'xxxxx')
-  if(!ctx.cookies.get('koa:sess') && ctx.path !== '/auth/username'){
-    ctx.body ={
-      errorCode: '403',
-      errorInf0: '请重新登陆'
-    }
-  }
-  await next()
-})
+console.log('session')
+//登陆拦截   放到了util的tool中
+// app.use(async function(ctx, next) {
+//   console.log(ctx.cookie,'cookie')
+//   console.log(ctx.session, 'session')
+//   console.log(ctx.cookies.get('koa:sess'),ctx.path, 'xxxxx')
+//   if(!ctx.cookies.get('koa:sess') && ctx.path !== '/auth/username'){
+//     console.log('未登录')
+//     ctx.body ={
+//       errorCode: '403',
+//       errorInf0: '请重新登陆'
+//     }
+//   }
+//   console.log('session验证22')
+//   await next()
+// })
 
+console.log('session验证')
 router.use('/auth', auth.routes()); // 挂载到koa-router上，同时会让所有的auth的请求路径前面加上'/auth'的请求路径。
 router.use('/api', jwt({secret: 'vue-koa-demo'}), api.routes()) // 所有走/api/打头的请求都需要经过jwt验证。
 // router.use('/api', api.routes());
