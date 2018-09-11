@@ -42,7 +42,7 @@ export default {
     upfile() {
       var form = document.forms[0];
       var formData = new FormData(form); //这里连带form里的其他参数也一起提交了,如果不需要提交其他参数可以直接FormData无参数的构造函数
-	    console.log(formData)
+	    console.log(formData,'1111')
       this.$http.post('/auth/upfile', formData)
 	      .then((res)=>{
 	        console.log('imgurl', res)
