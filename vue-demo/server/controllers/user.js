@@ -33,7 +33,7 @@ const postUserAuth = async function (ctx) {
       const token = jwt.sign(userToken,secret); // 签发token
       ctx.session.token = token
       ctx.session.name = userInfo.name
-      ctx.session.pass = '2222222'
+      ctx.session.pass = '2222224'
       ctx.body = {
         success: true,
         token: token, // 返回token

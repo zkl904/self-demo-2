@@ -98,6 +98,6 @@ app.use(historyApiFallback()); // 在这个地方加入。一定要加在静态�
 app.use(serve(path.resolve('dist'))); // 将webpack打包好的项目目录作为Koa静态文件服务的目录
 
 
-module.exports = app.listen(8000, () => {
-  console.log(`Koa is listening in 8000`)
+module.exports = app.listen(8001, () => {
+  console.log(`Koa is listening in 8001`)
 })

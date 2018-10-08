@@ -12,18 +12,19 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {    // proxyTable我们能够将外部的请求通过webpack转发给本地，也就能够将跨域请求变成同域请求了。上面的意思是，我们在组件里请求的地址如果是/api/xxxx实际上请求的是http://localhost:8889/api/xxxx，但是由于webpack帮我们代理了localhost的8889端口的服务，所以我们可以把实际是跨域的请求当做是同域下的接口来调用。
       '/auth':{
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8001',
         changeOrigin: true
       },
       '/api':{
-        target: 'http://localhost:8000',
+        // target: 'http://192.168.20.49:8001',
+        target: 'http://localhost:8001',
         changeOrigin: true
       }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

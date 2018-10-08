@@ -1,6 +1,7 @@
 const OSS = require('ali-oss');
 const formidable = require("formidable");
 const co = require('co');
+
 const client = new OSS({
   region: 'oss-cn-beijing', //自定义项
   accessKeyId: 'LTAIA6471Zh0fD2k', //自定义项
@@ -36,7 +37,9 @@ const upfile = async(ctx, next) => {
   var alioss_upfile = function() {
     return new Promise(function(resolve, reject) {
       var form = new formidable.IncomingForm();
+      console.log(form)
       form.parse(ctx.req, function(err, fields, files) {
+        console.log(err, fields, files , '222')
         if (err) { throw err; return; }
         // 文件名
         var date = new Date();
