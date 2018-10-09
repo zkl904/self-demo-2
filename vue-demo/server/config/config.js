@@ -1,7 +1,7 @@
 const porduction = {
   REDIS: {
-    // host: 'localhost',
-    host: 'http://192.168.20.49',
+    host: 'localhost',
+    // host: 'http://192.168.20.49',
     port: 6379,
     password: "",
     maxAge: 3600000,
@@ -11,8 +11,8 @@ const porduction = {
 
 const development = {
   REDIS: {
-    // host: 'localhost',
-    host: 'http://192.168.20.49',
+    host: 'localhost',
+    // host: 'http://192.168.20.49',
     port: 6379,
     password: "",
     maxAge: 3600000,
