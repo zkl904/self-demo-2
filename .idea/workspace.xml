@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be7fb012-9703-43ed-81bb-2fb1ff3b2b3b" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/vue-demo/server/config/config.js" afterPath="$PROJECT_DIR$/vue-demo/server/config/config.js" />
-    </list>
+    <list default="true" id="be7fb012-9703-43ed-81bb-2fb1ff3b2b3b" name="默认" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -198,9 +196,11 @@
       <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue-demo/server/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
+                <element signature="e#19#169#0" expanded="true" />
+                <element signature="e#30#166#0" expanded="true" />
                 <element signature="e#191#341#0" expanded="true" />
                 <element signature="e#202#338#0" expanded="true" />
               </folding>
@@ -637,7 +637,7 @@
       <workItem from="1538098825455" duration="598000" />
       <workItem from="1538185332665" duration="2040000" />
       <workItem from="1538987316821" duration="4205000" />
-      <workItem from="1539056790288" duration="546000" />
+      <workItem from="1539056790288" duration="579000" />
     </task>
     <servers />
   </component>
@@ -674,7 +674,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167362000" />
+    <option name="totallyTimeSpent" value="167395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1552" height="840" extended-state="6" />
@@ -1191,9 +1191,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-demo/server/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
+            <element signature="e#19#169#0" expanded="true" />
+            <element signature="e#30#166#0" expanded="true" />
             <element signature="e#191#341#0" expanded="true" />
             <element signature="e#202#338#0" expanded="true" />
           </folding>
