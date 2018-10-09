@@ -3,7 +3,7 @@ const porduction = {
     host: 'localhost',
     // host: 'http://192.168.20.49',
     port: 6379,
-    password: "",
+    password: "123456",
     maxAge: 3600000,
     db: 0
   },
@@ -14,7 +14,7 @@ const development = {
     host: 'localhost',
     // host: 'http://192.168.20.49',
     port: 6379,
-    password: "",
+    password: "123456",
     maxAge: 3600000,
     db: 1
   },
